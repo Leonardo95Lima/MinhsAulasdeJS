@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(120deg, #a5042cd8, #d3bec4da);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Digite o pais que você mora <input type="text" name="txtmora" id="txtmora"><br>
+    Digite o pais que você nasceu <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="pesquisar()">
+    <div id="resultado"></div>
+
+    <script>
+        function pesquisar(){
+            var paismora = document.querySelector('input#txtmora')
+            var res = document.querySelector('div#resultado')
+            var txtpais = document.querySelector('input#txtpais')
+            var pais = txtmora.value
+            var paisnac = txtpais.value
+            if(pais == paisnac){
+                res.innerHTML = `<p>O pais que você nasceu é o <strong>${pais}</strong> e você é <strong>Brasileira</strong></p>`
+            }else{
+                res.innerHTML = `<p>O pais que você nasceu é o <strong>${pais}</strong> e você é <strong>Estrangeira</strong></p>`
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

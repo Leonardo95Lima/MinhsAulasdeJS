@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body { /* sso é um comentario em CSS*/
+            background-color: rgb(68, 0, 255);
+            color: rgba(209, 3, 3, 0.993);
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(255, 255, 255);
+        }
+        script{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, Mundo!</h1> <!-- Isso é um comentario em HTML-->
+   <p>Já me livrei da maldição</p>
+    
+   <script>
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var s = n1 + n2 
+        var m = (n1 + n2) / 2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        window.alert(`A média entre ${n1} e ${n2} é igual a ${m}`)
+        // (number + number) para adição
+        // (String + String) para concatenação
+   </script>
+</body>
+</html>
